@@ -1,0 +1,10 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 2em;
+    text-align: center;
+    background: LightGray;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Exo 2', sans-serif;
+  }
