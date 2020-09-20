@@ -6,7 +6,13 @@ let explanation = document.getElementById("explanation");
 function renderPic(data) {
   picture.src = data.url;
   title.innerText = `Astronomy Picture of the Day: ${data.date}`;
-  credits.innerText = `${data.title} by ${data.copyright}`;
+  
+  if (data.copyright) {
+    credits.innerText = `${data.title} by ${data.copyright}`;
+  } else {
+    credits.innerText = data.title;
+  }  
+
   explanation.innerText = data.explanation;
 }
 
